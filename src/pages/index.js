@@ -3,10 +3,14 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/navbar'
-
+import data from "../data/plans.json"
+import { useEffect } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({data}) {
+  useEffect(()=>{
+    console.log(data);
+  },[])
   return (
     <>
       <Head>
@@ -19,7 +23,28 @@ export default function Home() {
         <div className='w-full'>
           <img className='w-full' src="https://i1.wp.com/www.ecouttarakhand.com/wp-content/uploads/2020/12/char-dham-yatra.jpeg?w=880&ssl=1" alt="" />
         </div>
+        <section>
+          <h1>We At AR Travels</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?
+          Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam odio asperiores voluptate error tenetur vero et repellat ipsam! Illum architecto asperiores perspiciatis?
+          Rem temporibus accusamus molestias odio aliquam commodi assumenda fugiat perspiciatis saepe. Modi nisi autem quasi delectus inventore quos. Facere fugiat numquam, ullam inventore tempore iste maxime id officiis quibusdam illo.
+          Cupiditate culpa vitae minus fugiat tenetur omnis in vero eos! Provident, accusamus vitae! Illum itaque iste pariatur, placeat possimus ullam nesciunt? Voluptates, officiis dolor. Rerum a cumque tempora architecto eaque?
+          Recusandae quis sed officiis asperiores? Et corrupti tenetur autem exercitationem magnam placeat, recusandae velit dolorem debitis iusto consectetur cumque fuga ut eveniet totam libero laboriosam doloremque repudiandae odio praesentium dolor.</p>
+        </section>
+        <div>
+          {data.plans.map((plan)=>{
+            return <div>
+              HII
+            </div>
+          })}
+        </div>
       </main>
     </>
   )
+}
+
+export async function getServerSideProps(context) {
+  return {
+    props: {data}, // will be passed to the page component as props
+  }
 }

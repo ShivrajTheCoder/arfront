@@ -1,0 +1,36 @@
+{
+    "plans":[
+        {
+            "title":"Char Dham Yatra",
+            "exit":"Haridwar",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam",
+            "slug":"char-dham-car"
+        },
+        {
+            "title":"Ek Dham Yatra",
+            "exit":"Haridwar",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam",
+            "slug":"ek-dham-car"
+        },
+        {
+            "title":"Char Dham Yatra",
+            "exit":"Haridwar",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam",
+            "slug":"char-dham-single"
+        }
+    ],
+    "group-plans":[
+        {
+            "title":"Char Dham Yatra",
+            "exit":"Haridwar",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam",
+            "slug":"char-dham-group"
+        },
+        {
+            "title":"Ek Dham Yatra",
+            "exit":"Haridwar",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam",
+            "slug":"ek-dham-group"
+        }
+    ]
+}

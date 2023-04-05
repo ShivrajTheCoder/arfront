@@ -20,12 +20,12 @@ export default function Home({ data }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className='bg-[#f5ebe0]'>
         <div className='w-full'>
           <img className='w-full' src="https://i1.wp.com/www.ecouttarakhand.com/wp-content/uploads/2020/12/char-dham-yatra.jpeg?w=880&ssl=1" alt="" />
         </div>
-        <section>
-          <h1>We At AR Travels</h1>
+        <section className='flex flex-col items-center mx-10 my-10 rounded-md px-10 py-5 bg-white'>
+          <h1 className='font-bold text-3xl pb-5'>We At AR Travels</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?
             Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam odio asperiores voluptate error tenetur vero et repellat ipsam! Illum architecto asperiores perspiciatis?
             Rem temporibus accusamus molestias odio aliquam commodi assumenda fugiat perspiciatis saepe. Modi nisi autem quasi delectus inventore quos. Facere fugiat numquam, ullam inventore tempore iste maxime id officiis quibusdam illo.

@@ -1,13 +1,17 @@
 import { useRouter } from 'next/router'
-import React from 'react'
+import React,{useEffect} from 'react'
 
 export default function Slug() {
   const router=useRouter();
-  const {slug}=router.query;
+  const[data, setData] = React.useState()
+
+  useEffect(() => {
+    setData(router.query.slug);
+  }, [])
+  
     return (
     <div>
-      dafdsdf
-      <p>{slug}</p>
+      <p>{data}</p>
     </div>
   )
 }

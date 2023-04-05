@@ -9,7 +9,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      container:{
+        padding:{
+          sm:'2rem',
+          md:'4rem',
+          lg:'6rem',
+          xl:'8rem',
+        }
+      }
+    },
   },
   plugins: [],
 }

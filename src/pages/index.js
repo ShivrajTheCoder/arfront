@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Navbar from '@/components/navbar'
+// import Navbar from '@/components/navbar'
 import data from "../data/plans.json"
 import { useEffect } from 'react'
 import OffersCard from '@/components/HomeScreenComponents/OffersCard'
@@ -20,29 +20,37 @@ export default function Home({ data }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-[#f5ebe0]'>
         <div className='w-full'>
           <img className='w-full' src="https://i1.wp.com/www.ecouttarakhand.com/wp-content/uploads/2020/12/char-dham-yatra.jpeg?w=880&ssl=1" alt="" />
         </div>
-        <section className='flex flex-col items-center mx-10 my-10 rounded-md px-10 py-5 bg-white'>
-          <h1 className='font-bold text-3xl pb-5'>We At AR Travels</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?
+      <main className='xl:container'>
+        <section className='mx-2 md:mx-10 my-10 rounded-md px-4 py-5 bg-slate-100'>
+          <h1 className='font-bold text-2xl text-justify'>We At AR Travels</h1>
+          <p className='text-justify mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sit qui vero, laudantium adipisci at laboriosam molestias distinctio asperiores temporibus officiis quas. Nulla esse aliquid, consequatur enim repellat excepturi?
             Perspiciatis in quam cumque velit praesentium sit laudantium iure fuga reiciendis necessitatibus, expedita eos debitis, fugit, aperiam odio asperiores voluptate error tenetur vero et repellat ipsam! Illum architecto asperiores perspiciatis?
             Rem temporibus accusamus molestias odio aliquam commodi assumenda fugiat perspiciatis saepe. Modi nisi autem quasi delectus inventore quos. Facere fugiat numquam, ullam inventore tempore iste maxime id officiis quibusdam illo.
             Cupiditate culpa vitae minus fugiat tenetur omnis in vero eos! Provident, accusamus vitae! Illum itaque iste pariatur, placeat possimus ullam nesciunt? Voluptates, officiis dolor. Rerum a cumque tempora architecto eaque?
             Recusandae quis sed officiis asperiores? Et corrupti tenetur autem exercitationem magnam placeat, recusandae velit dolorem debitis iusto consectetur cumque fuga ut eveniet totam libero laboriosam doloremque repudiandae odio praesentium dolor.</p>
         </section>
-        <div className='flex flex-row'>
+
+        {/* group plans */}
+        <div className='mt-10'>
+          <h1 className='text-2xl font-semibold mb-2 text-center'>Group Plans</h1>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
           {
             data.groupPlans.map((gplan) => {
               return <OffersCard plan={gplan}/>
             })
           }
         </div>
-        <div className='flex flex-row'>
+        </div>
+        <div className='mt-10'>
+          <h1 className='text-2xl font-semibold mb-2 text-center'>Plans</h1>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           {data.plans.map((plan) => {
             return <OffersCard plan={plan}/>
           })}
+        </div>
         </div>
 
       </main>
